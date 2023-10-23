@@ -1,0 +1,61 @@
+.register {
+  height: 100vh;
+  background-image: linear-gradient(to right, #fff5bc, #cec1ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  width: 100%;
+}
+
+.registerForm {
+  height: 105%;
+  width: 40%;
+  background-color: white;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 1vmax 1vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registerForm input {
+  box-sizing: border-box;
+  padding: 1vmax 1vmax;
+  width: 80%;
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  margin: 1vmax;
+  outline: none;
+  font: 100 1.2rem "Roboto", sans-serif;
+}
+
+.registerForm > a {
+  align-self: flex-end;
+  text-decoration: none;
+  color: rgb(173, 175, 173);
+}
+
+.registerForm input:nth-child(3) {
+  background-color: rgb(38, 63, 173);
+  outline: none;
+  border: 1px solid transparent;
+  width: 40%;
+  padding: 1.5vmax 0vmax;
+}
+
+.registerForm > input[type="file"]::-webkit-file-upload-button {
+  background-color: rgb(38, 63, 173);
+  color: white;
+  width: 100%;
+  /* padding: 1vmax; */
+  border-radius: 30px;
+  border: none;
+  font: 100 1.2rem "Roboto";
+  align-self: center;
+}
+
+.registerForm > input[type="file"]::-webkit-file-upload-button :hover {
+  cursor: pointer;
+}

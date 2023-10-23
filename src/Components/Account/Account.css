@@ -1,0 +1,92 @@
+.account {
+  /* min-height: 100vh; */
+  height: 93.8vh;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  background-image: linear-gradient(to right, #fff5bc, #cec1ff);
+}
+
+.accountLeft {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  /* flex-wrap: wrap; */
+}
+
+.accountright {
+  height: 100%;
+  padding-top: 2vmax;
+  overflow-y: auto;
+  border-left: 1px solid rgba(204, 203, 203, 0.342);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accountright img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.accountright img {
+  transition: all 0.5s;
+}
+
+.a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none;
+  color: #3b3b3b;
+  font-family: "Roboto";
+  margin-bottom: 2vmax;
+}
+
+.a > button {
+  padding: 1vmax;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #3b3b3b;
+}
+
+.a > button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px grey;
+}
+
+a {
+  /* margin-top: 1vmax; */
+  text-decoration: none;
+  padding: 0.5vmax;
+  background-color: transparent;
+  color: #3b3b3b;
+  font-family: "Roboto";
+  font-size: 1vmax;
+}
+
+.mt{
+  margin-top: 1vmax;
+}
+
+a:hover {
+  /* background-color: rgb(211, 209, 209); */
+}
+
+@media screen and (max-width: 600px) {
+  .account {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .accountleft {
+    padding: 0;
+    min-height: 90vh;
+  }
+
+  .accountright > a {
+    font: 100 1rem "Roboto";
+    margin-top: 6vw;
+  }
+}

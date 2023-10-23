@@ -1,0 +1,89 @@
+.post {
+  width: 45%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 0.1vmax 2vmax;
+  margin: 1vmax;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1vmax;
+  cursor: pointer;
+}
+
+.postHeader > Button > svg {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.6vmax;
+}
+
+.post > img {
+  width: 100%;
+}
+
+.postDetails {
+  display: flex;
+  padding: 1vmax;
+  align-items: center;
+}
+
+.postDetails > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 1vmax;
+}
+
+.postFooter > button {
+  color: rgba(0, 0, 0, 0.767);
+  margin: 1vmax 0.2vmax;
+  text-decoration: none;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+
+.postFooter > button:hover {
+  transform: translateY(-4px);
+}
+
+.postFooter > button > svg {
+  font-size: 1.6vmax;
+}
+
+.dialogBox {
+  height: 70vh;
+  min-width: 500px;
+  padding: 2vmax;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* background-color: blueviolet; */
+}
+
+.commentForm {
+  margin-top: 2vmax;
+  margin-bottom: 2vmax;
+  height: 10%;
+  display: flex;
+  /* background-color: brown; */
+  /* display: inline-block; */
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commentForm input[type="text"] {
+  outline: none;
+  margin-left: -5px;
+  border-right: transparent;
+  border: 1px solid rgb(182, 179, 179);
+}
+
+.commentForm > Button {
+  margin-left: -50px;
+  padding: 0.75vmax;
+}

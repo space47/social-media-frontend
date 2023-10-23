@@ -1,0 +1,54 @@
+.newPost {
+  min-height: 93.8vh;
+  background-image: linear-gradient(to right, #fff5bc, #cec1ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newPostForm {
+  /* margin-top: 1vmax; */
+  min-height: 50vh;
+  width: 35%;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.404);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newPostForm > img {
+  width: 30%;
+  object-fit: cover;
+  margin-bottom: 2vmax;
+}
+
+.newPostForm > h3 {
+  margin: 2vmax;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 1vmax;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  margin: 2vmax;
+  font: "Roboto";
+  margin-left: 4vmax;
+}
+
+.newPostForm > input[type="file"]::-webkit-file-upload-button {
+  background-color: rgb(38, 63, 173);
+  color: white;
+  width: 100%;
+  padding: 1vmax;
+  border-radius: 30px;
+  border: none;
+  font: 100 1.2rem "Roboto";
+}
+
+.newPostForm > input[type="file"]::-webkit-file-upload-button :hover {
+  cursor: pointer;
+}
